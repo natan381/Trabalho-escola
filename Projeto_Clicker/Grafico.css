@@ -1,1 +1,8 @@
+.biscoito2 {
+  display: flex;
+  justify-content: center; /* Alinha na horizontal */
+  align-items: center;     /* Alinha na vertical */
+  height: 200px;
+
+}
 

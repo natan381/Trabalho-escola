@@ -1,13 +1,27 @@
-let contador = 0;
-let x = 1;
-let preco = 10;
-function contar() {
+let contador = 0; //valor do contador
+
+let x = 1; //Valor de biscoitos por click
+
+let preco = 10; //preço do primeiro Upgrade
+
+let preço2 = 10 //preço do segundo Upgrade
+
+let y = 0; // Valor dos cliques por segundo
+
+let preço3 = 50 //preço do terceiro upgrade
+
+//Função de contador para adicionar cookies por click
+function contar() { 
     contador += x;
+    
     document.getElementById("contador").innerHTML = contador;
+
 }
 
 document.getElementById("biscoito").addEventListener("click", contar);
     
+
+
 function upgrade() {
     if (contador >= preco) {
         contador -= preco;
@@ -15,12 +29,32 @@ function upgrade() {
         preco *= 2;
         document.getElementById("contador").innerHTML = contador;
         document.getElementById("preco").innerHTML = preco;
+        document.getElementById("x").innerHTML = x;
     }
     else {
-        alert("Você não tem biscoitos suficientes para comprar o upgrade!");
+        alert("Você não tem saldo suficientes para comprar o upgrade!");
     }
 
 
 
 
 }
+
+function upgrade2 () {
+    if (contador >= preço2) {
+        contador -= preço2;
+        x *= 2;
+        preço2 *= 4;
+        document.getElementById("contador").innerHTML = contador;
+        document.getElementById("preço2").innerHTML = preço2;
+        document.getElementById("x").innerHTML = x;
+
+
+    
+    }else{
+        alert("Você não tem saldo suficiente para comprar o upgrade!");
+    }
+
+
+}
+

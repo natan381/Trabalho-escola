@@ -4,6 +4,7 @@
         <title>projeto clicker</title>
         <script src="Script.js"></script>
         <link rel="stylesheet" href="grafico.css">
+        <audio id="somclique" src="cliqueSom.mp3"></audio>
         
     
     </head>
@@ -13,30 +14,43 @@
     <body>
         <h1 style="text-align: center;"><img src="cookie.png" width="20" height="20">PROJETO CLICKER</h1>
         <br>
-        <a href="Creditos.html">Creditos</a>
+        <a target="_blank" href="Creditos.html">Creditos</a>
          
        <br>
        <br>
        <p>Biscoitos por Click: <span id="x">1</span></p>
         <P>BISCOITOS:</P><p id="contador">0</p>
         
+
+
+
         <div class="biscoito2">
-        <button  onclick="contar()"><img src="cookie.png" width="200" height="200" class="biscoito" id="biscoito"> </button>
+    <button  onclick="som_clik(); contar()"|><img src="cookie.png" width="200" height="200" class="biscoito" id="biscoito">
+        
+        </button>
         
         </div>
         
-        <button width="100" height="50" onclick="upgrade()">Adicionar mais um biscoito por clicke</button
+
+
+
+
+        <button class="botao3" width="100" height="70" onclick="upgrade();">Adicionar Click</button
         
         >
         <p>Preço do upgrade: <span id="preco">10</span> biscoitos</p>
         
-        <button width="100" height="50" onclick="upgrade2()">
-            Multiplicar seus clicks
+
+
+
+
+        <button class="botao3" width="100" height="50" onclick="upgrade2()">
+            Multiplicar seus Clicks
         </button>    
-        <p>Preço do Upgrade: <span id="preço2">20</span></p>
+        <p>Preço do Upgrade: <span id="preço2">200</span></p>
 
 
-       
+    
         
              
        
@@ -44,11 +58,6 @@
     
     
     </body>
-
-    
-
-
-
 
 
 </html>

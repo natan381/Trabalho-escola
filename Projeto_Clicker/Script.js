@@ -4,19 +4,18 @@ let x = 1; //Valor de biscoitos por click
 
 let preco = 10; //preço do primeiro Upgrade
 
-let preço2 = 10 //preço do segundo Upgrade
+let preço2 = 200 //preço do segundo Upgrade
 
-let y = 0; // Valor dos cliques por segundo
 
-let preço3 = 50 //preço do terceiro upgrade
+
+
 
 //Função de contador para adicionar cookies por click
 function contar() { 
     contador += x;
-    
     document.getElementById("contador").innerHTML = contador;
-
-}
+    
+}   
 
 document.getElementById("biscoito").addEventListener("click", contar);
     
@@ -54,6 +53,15 @@ function upgrade2 () {
     }else{
         alert("Você não tem saldo suficiente para comprar o upgrade!");
     }
+
+
+}
+
+function som_clik(){
+
+    var som = document.getElementById("somclique");
+    som.ariaCurrent = 0;
+    som.play();
 
 
 }

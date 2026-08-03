@@ -2,10 +2,12 @@
 <html>
     <head>
         <title>Trabalhos</title>
+        <link rel="stylesheet" href="graficos2.css">
+        <audio id="elevador" src="musica_elevador.mp3"></audio>
     </head>
     <body>
         <h1>Trabalho Clicker Creditos:</h1>
-        <a href="index.html">Voltar</a>
+        
        
        
         <p>Trabalho Clicker:
@@ -20,7 +22,31 @@
             </ul>
         
         </p>
+        <hr>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <button class="botao08"  onclick="playmusica();">    
+            Musica Maneira.mp3 :)
+        </button>
+        
+        <script>
+            function playmusica() {
+                var musica = document.getElementById("elevador");
+                if (musica.paused) {
+                    musica.play();
+                } else {
+                    musica.pause();
+                }
+            }
+        </script>
+
+
+
     </body>
+    
 </html>
 
 

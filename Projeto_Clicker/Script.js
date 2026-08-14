@@ -89,4 +89,17 @@ function som_clik(){
 
 
 }
+function toggleMenu(id) {
+  const conteudos = document.querySelectorAll('.menu-content');
+  conteudos.forEach(menu => {
+    if (menu.id === id) {
+      menu.classList.toggle('ativo');
+    } else {
+      menu.classList.remove('ativo');
+    }
+  });
+}
+
+
+
 
